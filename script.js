@@ -1,15 +1,1 @@
-
-const menuButton = document.querySelector('[data-menu-button]');
-const mobileNav = document.querySelector('[data-mobile-nav]');
-if (menuButton && mobileNav) {
-  menuButton.addEventListener('click', () => {
-    const open = mobileNav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(open));
-  });
-  mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded','false');
-  }));
-}
-const year = document.querySelector('[data-year]');
-if (year) year.textContent = new Date().getFullYear();
+const menuButton=document.querySelector('[data-menu-button]');const mobileNav=document.querySelector('[data-mobile-nav]');if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=mobileNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu')});mobileNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mobileNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open navigation menu')}))}const year=document.querySelector('[data-year]');if(year)year.textContent=new Date().getFullYear();if('IntersectionObserver'in window){const els=document.querySelectorAll('.reveal');const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});els.forEach(el=>obs.observe(el))}else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));document.querySelectorAll('[data-placeholder-link]').forEach(btn=>btn.addEventListener('click',()=>{btn.textContent='Placeholder ready — add the verified URL later';setTimeout(()=>btn.textContent='Project link coming soon',2200)}));
