@@ -1,32 +1,25 @@
-# Faisal Talukdar — Personal Brand / Performance Marketing Website
+# Halal Food
 
-Static HTML/CSS/JS package for GitHub Pages. No build step required.
+Static HTML/CSS/Vanilla JS halal food ordering website.
 
-## Main pages
-- `index.html` — lightweight landing page
-- `services.html` — all six service areas
-- `about.html` — bio, working style and profile links
-- `contact.html` — direct contact + email handoff form
-- `blog/index.html` — Insights
-- `case-studies/halal-food.html` — selected case study
-- `privacy.html` and `404.html`
+## Structure
+- index.html
+- order.html
+- css/style.css
+- js/main.js
+- js/products-index.js
+- categories/*.html
+- images/<category>/*.jpg
+- docs/price-list.pdf
+- robots.txt
+- sitemap.xml
 
-## Logo upload system
-Go to `assets/images/logos/`. Replace the 11 starter PNGs using the exact same filenames. The website reads those local files automatically; no HTML/CSS/JS change is needed when replacing a logo with another image using the same filename.
+## Before publishing
+1. Deploy the Google Apps Script and paste the Web App URL into `js/main.js`.
+2. Replace placeholder JPG files with real product photos using the exact filenames.
+3. Replace placeholder prices in the category pages.
+4. Replace placeholder customer reviews with real reviews.
+5. Replace `docs/price-list.pdf` with the real price list.
 
-Recommended logo format: transparent PNG or SVG, square, at least 64×64px.
-
-## Marquee behavior
-- Platform belt: right → left
-- AI belt: left → right
-- Full viewport width
-- Duplicated tracks for a continuous loop
-- Edge masking only at the actual browser edges
-- Hover pauses on desktop
-- `prefers-reduced-motion` is respected
-
-## Evidence policy
-Future case-study and proof slots are structured without invented performance numbers. Add verified metrics, screenshots, client context and testimonials as they become available.
-
-## Deploy
-Upload the contents of this folder to the GitHub Pages repository root.
+## WhatsApp
+The site uses `https://wa.me/8801842031164` behind normal CTA text. The word “WhatsApp” is intentionally not used in button labels.

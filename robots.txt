@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://faysaltalukder36-arch.github.io/faysal-digital/sitemap.xml
+
+Sitemap: https://faysaltalukder36-arch.github.io/halal-food/sitemap.xml
