@@ -30,3 +30,10 @@ Future case-study and proof slots are structured without invented performance nu
 
 ## Deploy
 Upload the contents of this folder to the GitHub Pages repository root.
+
+## Update notes
+- The landing-page service cards now open dedicated service-detail pages; those detail pages are intentionally not added to the primary header navigation.
+- The four About information cards now open dedicated detail articles, each with a direct contact CTA.
+- Secondary body copy was increased slightly for readability; the primary landing hero headline remains unchanged.
+- Large page images now use optimized WebP assets. The existing social-share PNG keeps the same filename/URL but was compressed without changing its design.
+- Canonical URLs, Open Graph URLs, sitemap coverage and structured data were aligned page-by-page.

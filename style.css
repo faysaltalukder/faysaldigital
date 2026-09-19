@@ -28,3 +28,7 @@
 .services-detailed-grid .service-card.detailed{cursor:pointer}
 
 .service-card:focus-visible,.info-item-link:focus-visible{outline:3px solid rgba(201,123,61,.32);outline-offset:3px}
+
+/* Preserve the original square profile artwork exactly; never crop or stretch it. */
+.profile-shell img,.about-profile img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;}
+.about-profile img{width:180px;max-width:100%;}
