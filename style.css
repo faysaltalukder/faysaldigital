@@ -14,3 +14,17 @@
 .blog-card p{margin:0 27px 20px;color:var(--muted);font-size:.92rem}
 .blog-card .btn{position:relative;z-index:2;margin:0 27px 27px;align-self:flex-start}
 @media(max-width:980px){.grid-3{grid-template-columns:1fr}}
+
+/* Readability refinement: secondary copy only; primary hero headline stays unchanged. */
+.service-card p{font-size:.94rem}
+.service-card.detailed ul{font-size:.88rem}
+.info-item span:last-child{font-size:.9rem}
+.prose p,.prose li{font-size:1.03rem;line-height:1.72}
+.breadcrumbs{font-size:.8rem}
+.article-note{font-size:.9rem;line-height:1.6}
+.info-item-link{cursor:pointer}
+.info-item-link:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.services-grid .service-card.compact{cursor:pointer}
+.services-detailed-grid .service-card.detailed{cursor:pointer}
+
+.service-card:focus-visible,.info-item-link:focus-visible{outline:3px solid rgba(201,123,61,.32);outline-offset:3px}
