@@ -8,7 +8,7 @@
 .blog-card{position:relative;display:flex;flex-direction:column;padding:0;transition:transform .22s ease,box-shadow .22s ease}
 .blog-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .blog-card-link{position:absolute;inset:0;z-index:1}
-.blog-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:var(--radius) var(--radius) 0 0}
+.blog-card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:var(--radius) var(--radius) 0 0}
 .blog-card .blog-meta{display:flex;gap:8px;color:var(--muted);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin:20px 27px 10px}
 .blog-card h2{font-size:1.2rem;margin:0 27px 10px;line-height:1.25}
 .blog-card p{margin:0 27px 20px;color:var(--muted);font-size:.92rem}
